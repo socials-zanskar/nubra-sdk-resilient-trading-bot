@@ -1,4 +1,4 @@
-# Nubra SDK — A Resilient End-to-End Trading Script (Python)
+# Nubra SDK A Resilient End-to-End Trading Script (Python)
 
 A complete, realistic template for the **Nubra Python SDK** (`nubra-sdk`) that puts all the error handling together in one flow:
 
