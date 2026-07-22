@@ -13,8 +13,8 @@ Every step handles its own failures, logs what happened, and exits cleanly inste
 | Step | Error handling shown |
 |---|---|
 | **Login** | Catches `ValueError` from OTP/MPIN failures ("Maximum OTP attempts exceeded") |
-| **Instrument lookup** | Lookups don't raise — they return `{"msg": ...}` when not found; the code checks for it |
-| **Place order** | Catches `NubraValidationError`, `UnauthorizedError`, `BadRequestError`, `ServerError`, `RetryLimitExceeded` — each with the right response |
+| **Instrument lookup** | Lookups don't raise they return `{"msg": ...}` when not found; the code checks for it |
+| **Place order** | Catches `NubraValidationError`, `UnauthorizedError`, `BadRequestError`, `ServerError`, `RetryLimitExceeded`  each with the right response |
 | **Check status** | Retries reads (safe) with a wait between attempts |
 | **Whole script** | Top-level `NubraHttpError` safety net + graceful Ctrl+C |
 
